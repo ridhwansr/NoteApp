@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Note Apps</title>
+  </head>
+
+  <body>
+    <loading-indikator></loading-indikator>
+    <header-component></header-component>
+    <main>
+      <div class="container">
+        <div class="card-content">
+          <!-- <div class="card-note">
+                    <button class="btn-delete">Hapus</button>
+                    <h3>Judul</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates laboriosam delectus reiciendis aliquid vitae vero magni hic quidem, sed repudiandae eaque doloremque sit quaerat. Iusto inventore doloremque sunt saepe fuga?</p>
+                </div> -->
+        </div>
+        <aside-add-note id="add-note-button"></aside-add-note>
+      </div>
+      <popup-add-note id="add-note-popup"></popup-add-note>
+    </main>
+    <footer-component></footer-component>
+    <script>
+      function showPopup() {
+        let popupElement = document.querySelector("#add-note-popup");
+        popupElement.classList.add("show");
+      }
+      window.onload = function () {
+        showPopup();
+      };
+    </script>
+  </body>
+</html>
